@@ -14,8 +14,10 @@
     <div class="todos-bg-container">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h1 class="todos-heading">Todos</h1>
+                <div class="col-12 bg-container">
+                    <h1 class="todos-heading" style = "text-decoration:underline">Todos</h1>
+                    <p style = "text-align:right; color: blue; font-weight:600">Total Task: <span id = "taskTotal"></span></p>
+                    <p style = "text-align:right; color: green; font-weight:600">Task Completed: <span id = "taskCompleted"></span></p>
                     <h1 class="create-task-heading">
                         Create <span class="create-task-heading-subpart">Task</span>
                     </h1>
@@ -25,7 +27,9 @@
                         My <span class="todo-items-heading-subpart">Tasks</span>
                     </h1>
                     <ul class="todo-items-container" id="todoItemsContainer"></ul>
-                    <button class="button" id="saveTodoButton">Save</button>
+                    <div>
+                    <button class="button" id="saveTodoButton">Save Changes</button>
+                </div>
                 </div>
             </div>
         </div>
